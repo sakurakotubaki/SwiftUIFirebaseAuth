@@ -11,6 +11,12 @@
 		B3FD41E32B011CAB00137BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41E22B011CAB00137BA1 /* ContentView.swift */; };
 		B3FD41E52B011CAD00137BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FD41E42B011CAD00137BA1 /* Assets.xcassets */; };
 		B3FD41E82B011CAD00137BA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FD41E72B011CAD00137BA1 /* Preview Assets.xcassets */; };
+		B3FD41F22B011D5A00137BA1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B3FD41F12B011D5A00137BA1 /* FirebaseAuth */; };
+		B3FD41F52B011DD000137BA1 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41F42B011DD000137BA1 /* AuthViewModel.swift */; };
+		B3FD41F82B011E5500137BA1 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41F72B011E5500137BA1 /* SignInView.swift */; };
+		B3FD41FA2B011E7200137BA1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41F92B011E7200137BA1 /* SignUpView.swift */; };
+		B3FD41FC2B011E9F00137BA1 /* ResetPasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41FB2B011E9F00137BA1 /* ResetPasswordPage.swift */; };
+		B3FD41FE2B011EEC00137BA1 /* HelloPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD41FD2B011EEC00137BA1 /* HelloPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		B3FD41E22B011CAB00137BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3FD41E42B011CAD00137BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3FD41E72B011CAD00137BA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3FD41F42B011DD000137BA1 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B3FD41F72B011E5500137BA1 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B3FD41F92B011E7200137BA1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B3FD41FB2B011E9F00137BA1 /* ResetPasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordPage.swift; sourceTree = "<group>"; };
+		B3FD41FD2B011EEC00137BA1 /* HelloPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FD41F22B011D5A00137BA1 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				B3FD41E02B011CAB00137BA1 /* FirebaseAuthTutorialApp.swift */,
+				B3FD41F62B011E4200137BA1 /* View */,
+				B3FD41F32B011DB800137BA1 /* ViewModel */,
 				B3FD41E22B011CAB00137BA1 /* ContentView.swift */,
 				B3FD41E42B011CAD00137BA1 /* Assets.xcassets */,
 				B3FD41E62B011CAD00137BA1 /* Preview Content */,
@@ -65,6 +79,25 @@
 				B3FD41E72B011CAD00137BA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3FD41F32B011DB800137BA1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD41F42B011DD000137BA1 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3FD41F62B011E4200137BA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD41F72B011E5500137BA1 /* SignInView.swift */,
+				B3FD41F92B011E7200137BA1 /* SignUpView.swift */,
+				B3FD41FB2B011E9F00137BA1 /* ResetPasswordPage.swift */,
+				B3FD41FD2B011EEC00137BA1 /* HelloPage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,9 @@
 			dependencies = (
 			);
 			name = FirebaseAuthTutorial;
+			packageProductDependencies = (
+				B3FD41F12B011D5A00137BA1 /* FirebaseAuth */,
+			);
 			productName = FirebaseAuthTutorial;
 			productReference = B3FD41DD2B011CAB00137BA1 /* FirebaseAuthTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,9 @@
 				Base,
 			);
 			mainGroup = B3FD41D42B011CAB00137BA1;
+			packageReferences = (
+				B3FD41F02B011D5A00137BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B3FD41DE2B011CAB00137BA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FD41E32B011CAB00137BA1 /* ContentView.swift in Sources */,
+				B3FD41FA2B011E7200137BA1 /* SignUpView.swift in Sources */,
+				B3FD41FC2B011E9F00137BA1 /* ResetPasswordPage.swift in Sources */,
 				B3FD41E12B011CAB00137BA1 /* FirebaseAuthTutorialApp.swift in Sources */,
+				B3FD41F82B011E5500137BA1 /* SignInView.swift in Sources */,
+				B3FD41FE2B011EEC00137BA1 /* HelloPage.swift in Sources */,
+				B3FD41F52B011DD000137BA1 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3FD41F02B011D5A00137BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3FD41F12B011D5A00137BA1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3FD41F02B011D5A00137BA1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3FD41D52B011CAB00137BA1 /* Project object */;
 }
